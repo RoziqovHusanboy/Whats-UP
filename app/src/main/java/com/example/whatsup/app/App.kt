@@ -1,6 +1,7 @@
 package com.example.whatsup.app
 
 import android.app.Application
+import com.example.whatsup.di.appModule
 import com.example.whatsup.di.localModule
 import com.example.whatsup.di.remoteModule
 import com.example.whatsup.di.repositoryModule
@@ -18,7 +19,7 @@ class App:Application() {
         startKoin{
             androidLogger()
             androidContext(this@App)
-            modules(repositoryModule, useCaseModule, localModule, remoteModule, viewModelModule)
+            modules(appModule ,repositoryModule, useCaseModule, localModule, remoteModule, viewModelModule)
         }
     }
 }

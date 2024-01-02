@@ -7,12 +7,13 @@ plugins {
 
 android {
     namespace = "com.example.whatsup"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.whatsup"
         minSdk = 24
-        targetSdk = 33
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -48,6 +49,11 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
     implementation ("io.insert-koin:koin-android:3.2.2")
+    implementation("com.github.terrakok:cicerone:7.1")
+
+
+
 
 }
