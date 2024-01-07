@@ -16,14 +16,10 @@ class SettingsStorageImpl(
             }
         }
     }
-    override fun onboarded(): Completable {
-      return  getSettings().flatMapCompletable {
-            Completable.fromCallable {
-                realm.writeBlocking {
-                    copyToRealm(it.apply{onboarded = true}, updatePolicy = UpdatePolicy.ALL)
-                }
-            }
-        }
+    override fun onboarded():Completable=  Completable.fromCallable {
+        realm.writeBlocking {
+            query<SettingsRealm>().find().firstOrNull()?.onboarded = true
+         }
      }
 
     override fun getOnboarded(): Single<Boolean>  =getSettings().map {

@@ -15,6 +15,7 @@ import com.example.domain.usecase.auth.SendSmsCodeUseCase
 import com.example.domain.usecase.settings.GetOnboardedUseCase
 import com.example.domain.usecase.settings.OnboardedUseCase
 import com.example.presentation.screens.main.MainViewModel
+import com.example.presentation.screens.onboarding.OnboardingViewModel
 import com.example.presentation.screens.phone.PhoneViewModel
 import com.github.terrakok.cicerone.Cicerone
 import io.realm.kotlin.Realm
@@ -57,5 +58,6 @@ val remoteModule = module {
 
 val viewModelModule = module {
     viewModel { PhoneViewModel(get()) }
-    viewModel { MainViewModel(get()) }
+    viewModel { MainViewModel(get(),get()) }
+    viewModel { OnboardingViewModel(get(),get()) }
 }
