@@ -20,7 +20,7 @@ class SettingsStorageImpl(
       return  getSettings().flatMapCompletable {
             Completable.fromCallable {
                 realm.writeBlocking {
-                    copyToRealm(it.copy(onboarded = true), updatePolicy = UpdatePolicy.ALL)
+                    copyToRealm(it.apply{onboarded = true}, updatePolicy = UpdatePolicy.ALL)
                 }
             }
         }

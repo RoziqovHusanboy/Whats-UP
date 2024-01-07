@@ -51,5 +51,6 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxandroid:3.0.0")
     implementation ("io.insert-koin:koin-android:3.2.2")
     implementation("com.github.terrakok:cicerone:7.1")
+    implementation ("androidx.core:core-splashscreen:1.1.0-alpha02")
 
 }

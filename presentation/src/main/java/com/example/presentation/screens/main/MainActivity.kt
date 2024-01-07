@@ -1,6 +1,7 @@
 package com.example.presentation.screens.main
 
 import android.os.Bundle
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.FragmentActivity
 import com.example.presentation.R
 import com.example.presentation.databinding.ActivityMainBinding
@@ -17,8 +18,12 @@ class MainActivity : FragmentActivity() {
     private val navigatorHolder:NavigatorHolder by inject()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        installSplashScreen()
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         viewModel
     }
 
