@@ -58,6 +58,6 @@ val remoteModule = module {
 
 val viewModelModule = module {
     viewModel { PhoneViewModel(get()) }
-    viewModel { MainViewModel(get(),get()) }
-    viewModel { OnboardingViewModel(get(),get()) }
+    viewModel { MainViewModel(get(), get()) }
+    viewModel { OnboardingViewModel(get(), get()) }
 }

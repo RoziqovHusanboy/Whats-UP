@@ -43,6 +43,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.compose.ui:ui-android:1.5.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -52,5 +53,7 @@ dependencies {
     implementation ("io.insert-koin:koin-android:3.2.2")
     implementation("com.github.terrakok:cicerone:7.1")
     implementation ("androidx.core:core-splashscreen:1.1.0-alpha02")
+
+    implementation("com.github.aabhasr1:OtpView:v1.1.2-ktx")
 
 }
