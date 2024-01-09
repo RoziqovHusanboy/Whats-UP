@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "184413618669",
+    "project_id": "messenger-877b1",
+    "storage_bucket": "messenger-877b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184413618669:android:4e498f5e418f979496a7e4",
+        "android_client_info": {
+          "package_name": "com.example.whatsup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGzv7mjek1aLHjYqhMwVQCZ72KG9xQ6VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
