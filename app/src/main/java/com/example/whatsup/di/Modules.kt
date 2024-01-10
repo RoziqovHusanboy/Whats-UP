@@ -12,6 +12,7 @@ import com.example.data.repo.SettingsRepositoryImpl
 import com.example.domain.repo.AuthRepository
 import com.example.domain.repo.SettingsRepository
 import com.example.domain.usecase.auth.SendSmsCodeUseCase
+import com.example.domain.usecase.auth.VerifyCodeUseCase
 import com.example.domain.usecase.settings.GetOnboardedUseCase
 import com.example.domain.usecase.settings.OnboardedUseCase
 import com.example.presentation.screens.main.MainViewModel
@@ -42,6 +43,7 @@ val useCaseModule = module {
     single<SendSmsCodeUseCase> { SendSmsCodeUseCase(get()) }
     single { GetOnboardedUseCase(get()) }
     single { OnboardedUseCase(get()) }
+    single { VerifyCodeUseCase(get()) }
 
 }
 

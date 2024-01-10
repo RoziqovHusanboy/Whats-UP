@@ -46,4 +46,7 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
     implementation("io.reactivex.rxjava3:rxandroid:3.0.0")
     implementation ("io.realm.kotlin:library-base:1.11.0")
+
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
+
 }

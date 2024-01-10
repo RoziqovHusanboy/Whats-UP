@@ -15,34 +15,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.MaterialComponents.Subtitle2"
-        android:text="@string/fragment_code_sent_to"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/otp"
         android:layout_marginBottom="8dp"
+        android:text="@string/fragment_code_sent_to"
+        app:layout_constraintBottom_toTopOf="@id/otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
         />
 
     <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/otp"
-        app:layout_constraintEnd_toEndOf="@id/otp"
-        app:layout_constraintTop_toBottomOf="@id/otp"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_error"
-        style="@style/TextAppearance.MaterialComponents.Subtitle2"
-        android:textColor="@color/red"
-        android:text="@string/fragment_code_invalid_otp"
-        android:paddingVertical="4dp"
-        android:paddingHorizontal="16dp"
-        android:visibility="gone"
         android:drawablePadding="8dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/fragment_code_invalid_otp"
+        android:textColor="@color/red"
+        android:visibility="gone"
         app:drawableStartCompat="@drawable/ic_error"
         app:drawableTint="@color/red"
+        app:layout_constraintEnd_toEndOf="@id/otp"
+        app:layout_constraintStart_toStartOf="@id/otp"
+        app:layout_constraintTop_toBottomOf="@id/otp"
 
         />
 
@@ -52,16 +52,15 @@
         android:layout_height="wrap_content"
         android:textColor="?android:textColorSecondary"
         app:bar_enabled="true"
-         app:bar_height="2dp"
+        app:bar_height="2dp"
         app:height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:length="5"
-         app:otp_text_size="24sp"
+        app:otp_text_size="24sp"
         app:width="40dp"
-
         />
 
 
